@@ -1,0 +1,8 @@
+%V <S> <C>
+%T c d
+%Syn a
+<S>
+ <C> <C>
+<C>
+ c <C>
+ d

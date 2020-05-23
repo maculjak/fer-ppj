@@ -1,0 +1,33 @@
+%V <program> <lista_naredbi> <naredba> <naredba_pridruzivanja> <za_petlja> <E> <E_lista> <T> <T_lista> <P>
+%T IDN BROJ KR_ZA KR_OD KR_DO KR_AZ OP_PLUS OP_MINUS OP_PUTA OP_DIJELI OP_PRIDRUZI L_ZAGRADA D_ZAGRADA
+%Syn KR_ZA KR_AZ
+<program>
+ <lista_naredbi>
+<lista_naredbi>
+ <naredba> <lista_naredbi>
+ $
+<naredba>
+ <naredba_pridruzivanja>
+ <za_petlja>
+<naredba_pridruzivanja>
+ IDN OP_PRIDRUZI <E>
+<za_petlja>
+ KR_ZA IDN KR_OD <E> KR_DO <E> <lista_naredbi> KR_AZ
+<E>
+ <T> <E_lista>
+<E_lista>
+ OP_PLUS <E>
+ OP_MINUS <E>
+ $
+<T>
+ <P> <T_lista>
+<T_lista>
+ OP_PUTA <T>
+ OP_DIJELI <T>
+ $
+<P>
+ OP_PLUS <P>
+ OP_MINUS <P>
+ L_ZAGRADA <E> D_ZAGRADA
+ IDN
+ BROJ
